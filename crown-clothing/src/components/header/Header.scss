@@ -2,9 +2,10 @@
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 25px;
-  // background-color: red;
+  background-color: #007bff;
+  padding-top: 10px;
 
   .logo-container {
     height: 100%;
@@ -21,6 +22,8 @@
 
     .option {
       padding: 10px 15px;
+      cursor: pointer;
+      color: white;
     }
   }
 }
