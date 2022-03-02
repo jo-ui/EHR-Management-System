@@ -1,6 +1,6 @@
 import "./App.css";
 import Homepage from "./pages/homepage/Homepage";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Shop from "./pages/shop/Shop";
 import Header from "./components/header/Header";
 import { auth, createUserProfileDocument } from "./firebase/firebase";
@@ -39,15 +39,29 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<Homepage />} />
             <Route exact path="/shop" element={<Shop />} />
-            <Route exact path="/signin" element={<SigninAndSignup />} />
+            <Route
+              exact
+              path="/signin"
+              element={
+                this.props.currentUser ? (
+                  <Navigate to="/" />
+                ) : (
+                  <SigninAndSignup />
+                )
+              }
+            />
           </Routes>
         </div>
       </div>
     );
   }
 }
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
