@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-import "./Signin.scss";
 import FormInput from "../form-input/FormInput";
 import CustomButton from "../custom-button/CustomButton";
 import { auth, signInWithGoogle } from "../../firebase/firebase";
+import { connect } from "react-redux";
+import { signinToggle } from "../../redux/cart/cartAction";
+import { signoutToggle } from "../../redux/cart/cartAction";
+
+import "./Signin.scss";
 
 class Signin extends Component {
   constructor() {
@@ -27,9 +31,18 @@ class Signin extends Component {
     this.setState({ [name]: value });
   };
   render() {
+    const { signinToggle, signoutToggle } = this.props;
     return (
       <div className="sign-in">
-        <h2 className="title">SIGN IN</h2>
+        <div className="buttons-for-log">
+          <CustomButton inverteda onClick={() => signinToggle()}>
+            SIGN-IN
+          </CustomButton>
+          <CustomButton inverteda onClick={() => signoutToggle()}>
+            SIGN-UP
+          </CustomButton>
+        </div>
+
         <span>Sign in with Email and Password</span>
 
         <form action="" onSubmit={this.handleSubmit}>
@@ -60,5 +73,9 @@ class Signin extends Component {
     );
   }
 }
+const mapDispatchToProps = (dispatch) => ({
+  signinToggle: (user) => dispatch(signinToggle(user)),
+  signoutToggle: (user) => dispatch(signoutToggle(user)),
+});
 
-export default Signin;
+export default connect(null, mapDispatchToProps)(Signin);

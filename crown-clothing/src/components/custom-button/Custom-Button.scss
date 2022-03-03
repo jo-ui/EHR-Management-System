@@ -16,11 +16,20 @@
   display: flex;
   justify-content: center;
 
-
   &:hover {
     background-color: #0073ee;
     color: white;
     border: 1px solid #0073ee;
+  }
+  &.inverted2 {
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid gray;
+    &:hover {
+      background-color: lightgray;
+      border: none;
+      color: black;
+    }
   }
   &.is-google-sign-in {
     background-color: white;

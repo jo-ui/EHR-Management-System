@@ -1,3 +1,10 @@
 {
-  "cSpell.ignoreWords": ["Signin", "Signup", "firestore", "middlewares"]
+  "cSpell.ignoreWords": [
+    "SIGNOUT",
+    "Signin",
+    "Signup",
+    "firestore",
+    "inverteda",
+    "middlewares"
+  ]
 }

@@ -2,6 +2,7 @@ import { cartActionTypes } from "./cartTypes";
 import { addItemToCart } from "./cart.utils";
 
 const INITIAL_STATE = {
+  signinState: true,
   hidden: true,
   cartItems: [],
 };
@@ -12,6 +13,16 @@ const cartReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         hidden: !state.hidden,
+      };
+    case cartActionTypes.TOGGLE_SIGNIN:
+      return {
+        ...state,
+        signinState: true,
+      };
+    case cartActionTypes.TOGGLE_SIGNOUT:
+      return {
+        ...state,
+        signinState: false,
       };
     case cartActionTypes.ADD_ITEM:
       return {
