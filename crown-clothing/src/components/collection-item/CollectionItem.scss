@@ -6,6 +6,7 @@
   align-items: center;
   background-color: white;
   padding: 6px;
+  position: relative;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 0.2),
     0 6px 20px 0 rgba(131, 130, 130, 0.19);
@@ -15,6 +16,22 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+  }
+  .custom-button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 255px;
+    display: none;
+  }
+  &:hover{
+    .image{
+      opacity: 0.8;
+    }
+    .custom-button{
+      opacity: 0.85;
+      display: flex;
+    }
   }
 
   .collection-footer {
