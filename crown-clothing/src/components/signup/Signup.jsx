@@ -44,7 +44,7 @@ class Signup extends Component {
   render() {
     return (
       <div className="sign-up">
-        <h2 className="title">I don't have an account</h2>
+        <h2 className="title">SIGN UP</h2>
         <span>Signup with email and password</span>
         <form className="sign-up-form" action="" onSubmit={this.handleSubmit}>
           <FormInput

@@ -8,6 +8,7 @@ a {
 }
 .container {
   padding: 5px 40px;
+  margin-top: 80px;
 }
 * {
   box-sizing: border-box;

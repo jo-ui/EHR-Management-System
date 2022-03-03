@@ -1,31 +1,35 @@
 const SHOP_DATA = [
   {
     id: 1,
-    title: "Hats",
-    routeName: "hats",
+    title: "Mobile Phones",
+    routeName: "Phone",
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        name: "iPhone 12 Pro Max",
+        imageUrl:
+          "https://www.techinn.com/f/13782/137821848/apple-iphone-12-pro-max-6gb-128gb-6.7.jpg",
         price: 25,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        name: "Samsung Galaxy S20",
+        imageUrl:
+          "https://images.samsung.com/levant/smartphones/galaxy-s20/models/images/galaxy-s20_models_360_kv_s.jpg",
         price: 18,
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        name: "Xiaomi 12",
+        imageUrl:
+          "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Xiaomi_12_und_12_Pro_Europa_Launch80.jpg",
         price: 35,
       },
       {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        name: "iPhone 13 Pro - 128GB",
+        imageUrl:
+          "https://res-1.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1632144228/ksnuvyfn6njszpzjcly5.png",
         price: 25,
       },
       {
@@ -62,31 +66,35 @@ const SHOP_DATA = [
   },
   {
     id: 2,
-    title: "Sneakers",
-    routeName: "sneakers",
+    title: "Computers",
+    routeName: "computer",
     items: [
       {
         id: 10,
-        name: "Adidas NMD",
-        imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
+        name: "iMac Apple",
+        imageUrl:
+          "https://www.apple.com/newsroom/images/product/mac/standard/Apple-iMac-gets-2x-more-performance-03192019_big.jpg.large.jpg",
         price: 220,
       },
       {
         id: 11,
-        name: "Adidas Yeezy",
-        imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
+        name: "Omen",
+        imageUrl:
+          "https://mspoweruser.com/wp-content/uploads/2017/06/hp-omen-laptop.jpg",
         price: 280,
       },
       {
         id: 12,
-        name: "Black Converse",
-        imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
+        name: "HP Laptop",
+        imageUrl:
+          "https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/How%20to%20Choose%20the%20Best%20Laptop%20for%20You%20hero1629234160688549.jpg",
         price: 110,
       },
       {
         id: 13,
-        name: "Nike White AirForce",
-        imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
+        name: "ASUS Laptop",
+        imageUrl:
+          "https://www.asus.com/event/30th-anniversary/30-years-of-asus/img/2019-UX581.jpg",
         price: 160,
       },
       {
@@ -117,31 +125,34 @@ const SHOP_DATA = [
   },
   {
     id: 3,
-    title: "Jackets",
-    routeName: "jackets",
+    title: "headphones",
+    routeName: "headphone",
     items: [
       {
         id: 18,
-        name: "Black Jean Shearling",
-        imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
+        name: "ANC Headphones",
+        imageUrl:
+          "https://freshnrebel.com/media/6f/f2/fa/1627375970/8720249800606_1.jpg",
         price: 125,
       },
       {
         id: 19,
-        name: "Blue Jean Jacket",
-        imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
+        name: "boAt Rockerz",
+        imageUrl: "https://m.media-amazon.com/images/I/315vj6oj-FL.jpg",
         price: 90,
       },
       {
         id: 20,
-        name: "Grey Jean Jacket",
-        imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
+        name: "bit headphone",
+        imageUrl:
+          "https://ak.picdn.net/shutterstock/videos/7728163/thumb/1.jpg",
         price: 90,
       },
       {
         id: 21,
-        name: "Brown Shearling",
-        imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
+        name: "New Headphones 2022",
+        imageUrl:
+          "https://www.rollingstone.com/wp-content/uploads/2020/02/best-luxury-headphones-e1582232323636.jpg?resize=1800,1200&w=1800",
         price: 165,
       },
       {
@@ -154,90 +165,87 @@ const SHOP_DATA = [
   },
   {
     id: 4,
-    title: "Womens",
+    title: "AirPods",
     routeName: "womens",
     items: [
       {
         id: 23,
-        name: "Blue Tanktop",
-        imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
-        price: 25,
+        name: "Apple AirPods",
+        imageUrl:
+          "https://www.techinn.com/f/13737/137370580/apple-airpods-pro-wireless-headphones.jpg",
+        price: 125,
       },
       {
         id: 24,
-        name: "Floral Blouse",
-        imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
-        price: 20,
+        name: "black AirPods",
+        imageUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv-7zociB2r1aWyzV1CIHA4-IYVg_rcA16Lw&usqp=CAU",
+        price: 90,
       },
       {
         id: 25,
-        name: "Floral Dress",
-        imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
-        price: 80,
+        name: "AirPods Max 2",
+        imageUrl:
+          "https://www.imore.com/sites/imore.com/files/styles/large_wm_blw/public/field/image/2020/12/airpods-max-side.jpg",
+        price: 90,
       },
       {
         id: 26,
-        name: "Red Dots Dress",
-        imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
-        price: 80,
+        name: "Apple review",
+        imageUrl:
+          "https://i.guim.co.uk/img/media/4d2b7ac379d13ff9b8872e5b3592501567878bae/716_680_3583_2151/master/3583.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e93719532dbadbfa1c98b27a10a6931c",
+        price: 165,
       },
       {
         id: 27,
-        name: "Striped Sweater",
-        imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
-        price: 45,
-      },
-      {
-        id: 28,
-        name: "Yellow Track Suit",
-        imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
-        price: 135,
-      },
-      {
-        id: 29,
-        name: "White Blouse",
-        imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
-        price: 20,
+        name: "Max",
+        imageUrl:
+          "https://i.guim.co.uk/img/media/ad9bff0b68155bafb13aaaffd399dc9a92f683a1/0_359_5456_3273/master/5456.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=1c4b85364282534d6c221e64a2d85675",
+        price: 185,
       },
     ],
   },
   {
     id: 5,
-    title: "Mens",
+    title: "Watch",
     routeName: "mens",
     items: [
       {
-        id: 30,
-        name: "Camo Down Vest",
-        imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
+        id: 28,
+        name: "boAt Storm",
+        imageUrl:
+          "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2_a25aff7a-b5c4-4565-a111-6e1ce2d5b5f0.png?v=1624268771",
         price: 325,
       },
       {
-        id: 31,
-        name: "Floral T-shirt",
-        imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
+        id: 29,
+        name: "HUAWEI Watch",
+        imageUrl:
+          "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-3/img/id/huawei-watch-3-strap-1-1.png",
         price: 20,
       },
       {
+        id: 30,
+        name: "Apple series 7",
+        imageUrl:
+          "https://cdn.hawkdive.com/media/allthings.how-how-to-fix-microsoft-store-not-opening-issue-on-windows-11-image-7-1.jpg",
+        price: 25,
+      },
+      {
+        id: 31,
+        name: "Piraso Analog",
+        imageUrl:
+          "https://m.media-amazon.com/images/I/61WixzlVuXL._UL1280_.jpg",
+        price: 25,
+      },
+      {
         id: 32,
-        name: "Black & White Longsleeve",
-        imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
-        price: 25,
-      },
-      {
-        id: 33,
-        name: "Pink T-shirt",
-        imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
-        price: 25,
-      },
-      {
-        id: 34,
         name: "Jean Long Sleeve",
         imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
         price: 40,
       },
       {
-        id: 35,
+        id: 33,
         name: "Burgundy T-shirt",
         imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
         price: 25,
