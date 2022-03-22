@@ -1,7 +1,16 @@
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import logger from "redux-logger";
-import RootReducer from "./RootReducer";
+import rootReducer from "./RootReducer";
+// import { persistStore } from "redux-persist";
 
 const middlewares = [logger];
-const store = createStore(RootReducer, applyMiddleware(...middlewares));
-export default store;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+export const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(...middlewares))
+);
+// export const persistor = persistStore(store);
+
+// eslint-disable-next-line import/no-anonymous-default-export
+// export default { store, persistor };

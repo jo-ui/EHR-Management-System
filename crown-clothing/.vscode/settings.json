@@ -1,10 +1,14 @@
 {
   "cSpell.ignoreWords": [
+    "Collectionparams",
     "SIGNOUT",
     "Signin",
     "Signup",
+    "airpods",
     "firestore",
     "inverteda",
-    "middlewares"
+    "middlewares",
+    "persistor",
+    "womens"
   ]
 }

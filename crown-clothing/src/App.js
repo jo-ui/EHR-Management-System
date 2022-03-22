@@ -12,6 +12,7 @@ import { createStructuredSelector } from "reselect";
 import Checkout from "./pages/checkout/Checkout";
 
 import "./App.css";
+import DetailandMagnify from "./components/detailandmagnify/DetailandMagnify";
 
 class App extends Component {
   unsubscribeFromAuth = null;
@@ -43,7 +44,8 @@ class App extends Component {
         <div className="container">
           <Routes>
             <Route exact path="/" element={<Homepage />} />
-            <Route exact path="/shop" element={<Shop />} />
+            <Route exact path="/shop/*" element={<Shop />} />
+            <Route exact path="/magnify" element={<DetailandMagnify />} />
             <Route exact path="/checkout" element={<Checkout />} />
             <Route
               exact

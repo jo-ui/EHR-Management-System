@@ -10,7 +10,7 @@ import "./CartItem.scss";
 const CartItem = ({ toggleCartHidden, itemCount }) => (
   <div className="cart-icon" onClick={toggleCartHidden}>
     <ShoppingIcon className="shopping-icon" />
-    <span className="item-count">{itemCount.toString()}</span>
+    <span className="item-count">{itemCount}</span>
   </div>
 );
 // const mapDispatchToProps = (dispatch) => ({
